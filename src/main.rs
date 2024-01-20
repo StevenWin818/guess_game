@@ -1,6 +1,9 @@
 use std::io;
+use rand::Rng; //trait
 fn main() {
     println!("----猜数----");
+
+    let secret_number = rand::thread_rng().gen_range(1..101);
 
     println!("猜测一个数：");
 
